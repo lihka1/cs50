@@ -2,7 +2,7 @@
 
 These are my solutions to cs50's problem sets(1-8)
 
-# problem sets 
+#problem sets 
       pset1: Implemented basic programs in C
       
       pset2: Implemented encryptic messeges in C (Data types, loops etc)
@@ -29,7 +29,7 @@ These are my solutions to cs50's problem sets(1-8)
       pset8:  
               Main Topics: GoogleMaps-API,Ajax,jQuery
                 Implemented a news map.
-# Some skills learned
+#Skills learned
       1) C Programming
       2) Python language
       2) Flask (web-frame work)
