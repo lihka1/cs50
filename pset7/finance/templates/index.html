@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+{% block main %}
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Name</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>TOTAL</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="4"></td>
+                <td>
+                    <b>{{ tot }} </b>
+                </td>
+            </tr>
+        </tfoot>
+        <tbody>
+                
+                {%for symbol in final%}
+                <tr>
+                    <td>{{symbol}}</td>
+                    <td>{{final[symbol][0]}}</td>
+                    <td>{{final[symbol][1]}}</td>
+                    <td>{{final[symbol][2]}}</td>
+                    <td>{{final[symbol][3]}}</td>
+                </tr>
+                
+                {%endfor%}
+            <tr>
+                <td colspan="4">CASH</td>
+                <td>{{cash}}</td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock%}
