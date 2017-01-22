@@ -72,21 +72,27 @@ function addMarker(place)
         title: place.place_name
     });
     
+    // read the code...and understand ..get hints from configure and show info
     marker.addListener('click', function() {
         $.getJSON(Flask.url_for("articles"), {geo: place.postal_code})
         .done(function(data, textStatus, jqXHR) {
             var content='<ul>';
+            // error checking not done..because...some news will be there!!!...
             for (var i = 0; i < data.length; i++){
                 content += '<li>';
                 content += "<a href="+data[i].link+">"+data[i].title+"</a>";
                 content += '</li>'
             }
             content += '</ul'
+            // show the content
             showInfo(marker, content)
         });    
     });
     
+    // add to the markers list
     markers.push(marker)
+    
+    // show the maker
     marker.setMap(map)
 }
 

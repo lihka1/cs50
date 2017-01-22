@@ -32,8 +32,7 @@ def index():
 @app.route("/articles")
 def articles():
     """Look up articles for geo."""
-
-    # TODO
+    # simple just read and understand the given code and API
     geo = request.args.get("geo")
     if not geo:
         raise RuntimeError("missing geo")
@@ -44,7 +43,10 @@ def articles():
 @app.route("/search")
 def search():
     """Search for places that match query."""
+    # simple remember error checking
     q=request.args.get("q")
+    if not q:
+        raise RuntimeError("missing query")
     rows=db.execute("SELECT * FROM places WHERE (postal_code LIKE :id) OR (place_name LIKE :id) OR (admin_name1 LIKE :id)", id=q+'%')
     return jsonify(rows)
 

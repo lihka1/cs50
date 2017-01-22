@@ -33,6 +33,7 @@ void release(node *ptr);
 bool check(const char *word)
 {
     node *trav = root;
+    // for each letter in the word
     for (int i = 0, n = strlen(word); i< n; i++)
     {
         if (word[i] == '\'')
@@ -59,6 +60,7 @@ bool check(const char *word)
         }
         
     }
+    // check whether the isword is true
     if (trav->isword == true)
     {
         return true;
@@ -157,6 +159,7 @@ bool unload(void)
 void release(node *ptr)
 {
     node *parent = ptr;
+    // recursively release the node...back-tracking
     for (int i = 0; i < 27; i++)
     {
         if (ptr->character[i] != NULL)

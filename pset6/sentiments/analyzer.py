@@ -5,6 +5,7 @@ class Analyzer():
 
     def __init__(self, positives, negatives):
         """Initialize Analyzer."""
+        # open positives and add to the positives set
         self.positives = set()
         self.negatives = set()
         with open(positives) as lines:
@@ -13,6 +14,7 @@ class Analyzer():
                     clean = line.strip()
                     if clean:
                         self.positives.add(clean.lower())
+        # open negatives and add to the negatives set
         with open(negatives) as lines:
             for line in lines:
                 if not line.startswith(';'):
@@ -20,15 +22,16 @@ class Analyzer():
                     if clean:
                         self.negatives.add(clean.lower())
                         
-        # TODO
+        
 
     def analyze(self, text):
         """Analyze text for sentiment, returning its score."""
-
-        # TODO
+        
+        # break into tokens
         tokenizer = nltk.tokenize.TweetTokenizer()
         tokens = tokenizer.tokenize(text)
         tot = 0
+        # count the total score
         for token in tokens:
             if token.lower() in self.positives:
                 tot += 1

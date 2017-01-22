@@ -41,7 +41,6 @@ def search():
                 negative += 1
             else:
                 neutral += 1
-    # TODO
     
 
     # generate chart
