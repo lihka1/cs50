@@ -1,8 +1,8 @@
-# cs50
+#cs50
 
 These are my solutions to cs50's problem sets(1-8)
 
-#problem sets 
+#Problem sets 
       pset1: Implemented basic programs in C
       
       pset2: Implemented encryptic messeges in C (Data types, loops etc)
@@ -11,7 +11,7 @@ These are my solutions to cs50's problem sets(1-8)
                 find: learnt about various sortings and implemented (counting sort)
                 game of fifteen: implemented console version of game of fifteen
       pset4:
-              Main Topics: pointers and FileI/O
+                Main Topics: pointers and FileI/O
                 whodunit:  Find the hidden messege in a picture 
                 resize:   Resize a given image
                 recover:  Recover images from a file
