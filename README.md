@@ -24,10 +24,10 @@ These are my solutions to cs50's problem sets(1-8)
                 Implemented a program that categorizes a user’s tweets as positive or negative.
                 Implemented a website that generates a pie chart categorizing a user’s tweets.
       pset7:  
-              Main Topics: MVC,DOM
+              Main Topics: SQL,SQLite,MVC,DOM
                 Implemented a stock-trading website.
       pset8:  
-              Main Topics: GoogleMaps-API,Ajax,jQuery
+              Main Topics: javascript,GoogleMaps-API,Ajax,jQuery
                 Implemented a news map.
 #Skills learned
       1) C Programming
