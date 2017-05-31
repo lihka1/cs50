@@ -1,8 +1,8 @@
-#cs50
+# cs50
 
 These are my solutions to cs50's problem sets(1-8)
 
-#Problem sets 
+# Problem sets 
       pset1: Implemented basic programs in C
       
       pset2: Implemented encryptic messeges in C (Data types, loops etc)
