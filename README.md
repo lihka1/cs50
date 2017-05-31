@@ -29,7 +29,7 @@ These are my solutions to cs50's problem sets(1-8)
       pset8:  
               Main Topics: javascript,GoogleMaps-API,Ajax,jQuery
                 Implemented a news map.
-#Skills learned
+# Skills learned
       1) C Programming
       2) Python language
       2) Flask (web-frame work)
